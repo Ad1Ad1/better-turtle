@@ -1,1 +1,2 @@
-
+TEST={}
+AVAILABLE_FILE_PRESETS={"test":TEST}
