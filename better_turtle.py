@@ -21,7 +21,7 @@ def draw_figure(tm,degree=0,repeat_times=0,PRESET=None,PRESET_SHAPE=None,SPEED=1
     else:
         if PRESET in AVAILABLE_FILE_PRESETS:
             if PRESET_SHAPE in AVAILABLE_FILE_PRESETS[PRESET]:
-                eval_preset(t,AVAILABLE_FILE_PRESETS[PRESET],PRESET_SHAPE)
+                advanced_eval(t,AVAILABLE_FILE_PRESETS[PRESET],PRESET_SHAPE)
             else:
                 print("PRESET ERROR: No such name in preset")
         else:
