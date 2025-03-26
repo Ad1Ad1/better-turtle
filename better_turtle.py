@@ -4,10 +4,8 @@ import sys
 sys.path.append("./presets/")
 from default_presets import AVAILABLE_FILE_PRESETS
 a=AVAILABLE_FILE_PRESETS
-print(a)
 from user_presets import AVAILABLE_FILE_PRESETS
 b=AVAILABLE_FILE_PRESETS
-print(b)
 AVAILABLE_FILE_PRESETS=a|b
 print(AVAILABLE_FILE_PRESETS)
 t=Pen()
@@ -16,7 +14,6 @@ t.goto(0,-300)
 t.down()
 def draw_figure(tm,degree=0,repeat_times=0,PRESET=None,PRESET_SHAPE=None,SPEED=10):
     t.speed(SPEED)
-    print("I am here")
     if PRESET==None:
         for x in range(0,repeat_times):
             tm.forward(100)
